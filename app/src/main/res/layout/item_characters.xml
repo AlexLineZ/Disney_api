@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="8dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -10,14 +11,15 @@
         android:id="@+id/image"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="30"
+        android:layout_weight="50"
         android:scaleType="fitStart"
         android:src="@drawable/mickey_mouse" />
 
     <TextView
+        android:textSize="18sp"
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="<-Sanya" />
+        android:text="Sanya" />
 
 </LinearLayout>

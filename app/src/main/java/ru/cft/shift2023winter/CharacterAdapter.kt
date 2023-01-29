@@ -1,5 +1,6 @@
 package ru.cft.shift2023winter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.TextureView
 import android.view.View
@@ -24,7 +25,8 @@ class CharacterAdapter(private val items: ArrayList<CharacterModel>) : RecyclerV
 
     override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
         val binding = holder.binding
-        Glide.with(binding.image.context).load(items[position].imageUrl).into(binding.image)
+        Log.i("Hello", items[position].name.toString())
+        Glide.with(binding.image.context).load(items[position].imageUrl).fitCenter().into(binding.image)
         binding.name.text = items[position].name
     }
 }
