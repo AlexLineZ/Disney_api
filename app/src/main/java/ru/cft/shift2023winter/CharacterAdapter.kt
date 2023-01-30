@@ -25,8 +25,9 @@ class CharacterAdapter(private val items: ArrayList<CharacterModel>) : RecyclerV
 
     override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
         val binding = holder.binding
-        Log.i("Hello", items[position].name.toString())
-        Glide.with(binding.image.context).load(items[position].imageUrl).fitCenter().into(binding.image)
+        if (!items[position].imageUrl.isNullOrEmpty()){
+            Glide.with(binding.image.context).load(items[position].imageUrl).into(binding.image)
+        }
         binding.name.text = items[position].name
     }
 }
