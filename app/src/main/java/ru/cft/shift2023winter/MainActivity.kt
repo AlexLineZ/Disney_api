@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import ru.cft.shift2023winter.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,8 +18,5 @@ class MainActivity : AppCompatActivity() {
 			startActivity(Intent)
 		}
 	}
-
-
-
 
 }
