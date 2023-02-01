@@ -37,6 +37,8 @@ class CharacterAdapter(private val items: ArrayList<CharacterModel>) : RecyclerV
     private var onClickImageCallback: (id: Int) -> Unit = {}
     fun setOnClickImageListener(callback: (id: Int) -> Unit){
         onClickImageCallback = callback
+
+
     }
 
 }
