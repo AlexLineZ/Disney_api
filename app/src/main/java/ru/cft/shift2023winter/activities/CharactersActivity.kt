@@ -13,10 +13,10 @@ import ru.cft.shift2023winter.databinding.ActivityCharactersBinding
 
 class CharactersActivity : AppCompatActivity(){
     private val binding by lazy {ActivityCharactersBinding.inflate(layoutInflater) }
-    @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
         GlobalScope.launch(Dispatchers.IO) {
             var response = DisneyAPI().getListOfCharacter()
             if (response.isSuccessful){
@@ -27,5 +27,6 @@ class CharactersActivity : AppCompatActivity(){
                 }
             }
         }
+
     }
 }

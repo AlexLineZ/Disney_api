@@ -15,7 +15,4 @@ object NetworkService {
             .build()
     }
 
-    val api: IDisneyAPI by lazy{
-        retrofit.create(IDisneyAPI::class.java)
-    }
 }

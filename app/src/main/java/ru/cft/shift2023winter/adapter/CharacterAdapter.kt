@@ -23,6 +23,7 @@ class CharacterAdapter(private val items: ArrayList<CharacterModel>) : RecyclerV
     override fun getItemCount(): Int {
         return items.size
     }
+
     override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
         val binding = holder.binding
         if (!items[position].imageUrl.isNullOrEmpty()){

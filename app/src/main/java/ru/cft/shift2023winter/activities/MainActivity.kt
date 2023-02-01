@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
 
 		val getButton = findViewById<Button>(R.id.getButton)
 		getButton.setOnClickListener {
-			val Intent = Intent(this, CharactersActivity::class.java)
-			startActivity(Intent)
+			val intent = Intent(this, CharactersActivity::class.java)
+			startActivity(intent)
 		}
 	}
 
