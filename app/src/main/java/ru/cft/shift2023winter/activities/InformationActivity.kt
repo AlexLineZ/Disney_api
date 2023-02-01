@@ -14,6 +14,8 @@ class InformationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         binding.name.text = intent.getIntExtra("findCharacterInformation", 0).toString()
+
+
     }
 
 }
