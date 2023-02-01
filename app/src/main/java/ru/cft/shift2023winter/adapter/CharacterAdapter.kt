@@ -31,5 +31,12 @@ class CharacterAdapter(private val items: ArrayList<CharacterModel>) : RecyclerV
             Glide.with(binding.image.context).load(items[position].imageUrl).into(binding.image)
         }
         binding.name.text = items[position].name
+        binding.image.setOnClickListener { onClickImageCallback(items[position]._id) }
     }
+
+    private var onClickImageCallback: (id: Int) -> Unit = {}
+    fun setOnClickImageListener(callback: (id: Int) -> Unit){
+        onClickImageCallback = callback
+    }
+
 }

@@ -5,16 +5,19 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import ru.cft.shift2023winter.R
+import ru.cft.shift2023winter.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+	private val binding by lazy {ActivityMainBinding.inflate(layoutInflater)}
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
-		setContentView(R.layout.activity_main)
+		setContentView(binding.root)
 
-		val getButton = findViewById<Button>(R.id.getButton)
+		val getButton = binding.getButton
 		getButton.setOnClickListener {
 			val intent = Intent(this, CharactersActivity::class.java)
 			startActivity(intent)
+			finish()
 		}
 	}
 

@@ -1,6 +1,7 @@
 package ru.cft.shift2023winter.activities
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.coroutines.Dispatchers
@@ -23,6 +24,11 @@ class CharactersActivity : AppCompatActivity(){
                 withContext(Dispatchers.Main){
                     var list = response.body()!!.data!!
                     var adapter = CharacterAdapter(list)
+                    adapter.setOnClickImageListener {id->
+                        val intent = Intent(this@CharactersActivity, InformationActivity::class.java)
+                        intent.putExtra("findCharacterInformation", id)
+                        startActivity(intent)
+                    }
                     binding.list.adapter = adapter
                 }
             }
