@@ -1,7 +1,8 @@
-package ru.cft.shift2023winter
+package ru.cft.shift2023winter.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import ru.cft.shift2023winter.interfaces.IDisneyAPI
 
 object NetworkService {
 
@@ -14,7 +15,7 @@ object NetworkService {
             .build()
     }
 
-    fun <T> buildService(service: Class<T>): T{
-        return retrofit.create(service)
+    val api: IDisneyAPI by lazy{
+        retrofit.create(IDisneyAPI::class.java)
     }
 }

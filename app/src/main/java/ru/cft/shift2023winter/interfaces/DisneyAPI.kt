@@ -1,6 +1,8 @@
-package ru.cft.shift2023winter
+package ru.cft.shift2023winter.interfaces
 
 import retrofit2.Response
+import ru.cft.shift2023winter.Root
+import ru.cft.shift2023winter.network.NetworkService
 
 class DisneyAPI {
     private val apiService = NetworkService.retrofit.create(IDisneyAPI::class.java)

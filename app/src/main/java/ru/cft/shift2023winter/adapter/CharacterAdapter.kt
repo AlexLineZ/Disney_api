@@ -1,12 +1,13 @@
-package ru.cft.shift2023winter
+package ru.cft.shift2023winter.adapter
 
 import android.util.Log
 import android.view.LayoutInflater
-import android.view.TextureView
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import ru.cft.shift2023winter.CharacterModel
+import ru.cft.shift2023winter.R
 import ru.cft.shift2023winter.databinding.ItemCharactersBinding
 
 class CharacterAdapter(private val items: ArrayList<CharacterModel>) : RecyclerView.Adapter<CharacterAdapter.CharacterViewHolder>(){
@@ -22,10 +23,10 @@ class CharacterAdapter(private val items: ArrayList<CharacterModel>) : RecyclerV
     override fun getItemCount(): Int {
         return items.size
     }
-
     override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
         val binding = holder.binding
         if (!items[position].imageUrl.isNullOrEmpty()){
+            Log.i("Hello", items[position].name.toString())
             Glide.with(binding.image.context).load(items[position].imageUrl).into(binding.image)
         }
         binding.name.text = items[position].name

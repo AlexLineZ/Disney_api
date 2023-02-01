@@ -23,7 +23,7 @@ data class CharacterModel(
 
 data class Root (
     var data: ArrayList<CharacterModel>? ,
-    var count: Int = 0 ,
+    var count: Int = 0,
     var previousPage: String?  ,
     var nextPage: String?
 )

@@ -1,11 +1,10 @@
-package ru.cft.shift2023winter
+package ru.cft.shift2023winter.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import ru.cft.shift2023winter.databinding.ActivityMainBinding
+import ru.cft.shift2023winter.R
 
 class MainActivity : AppCompatActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
