@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:weightSum="100">
+    android:weightSum="100"
+    android:background="#3F000000">
+
 
     <FrameLayout
         android:layout_width="0dp"
@@ -26,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="Sanya" />
+        android:text="Sanya"
+        android:fontFamily="@font/paper_mario_font"/>
 
 </LinearLayout>

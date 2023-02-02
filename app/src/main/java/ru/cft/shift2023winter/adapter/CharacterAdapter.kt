@@ -4,6 +4,8 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import ru.cft.shift2023winter.CharacterModel
@@ -12,6 +14,7 @@ import ru.cft.shift2023winter.databinding.ItemCharactersBinding
 
 class CharacterAdapter(private val items: ArrayList<CharacterModel>) : RecyclerView.Adapter<CharacterAdapter.CharacterViewHolder>(){
     inner class CharacterViewHolder(item:View) : RecyclerView.ViewHolder(item){
+        var shopDetailParent: Animation? = null
         val binding = ItemCharactersBinding.bind(item)
     }
 
@@ -26,6 +29,7 @@ class CharacterAdapter(private val items: ArrayList<CharacterModel>) : RecyclerV
 
     override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
         val binding = holder.binding
+        holder.shopDetailParent = AnimationUtils.loadAnimation(holder.itemView.context, R.anim.animation)
         if (!items[position].imageUrl.isNullOrEmpty()){
             Log.i("Hello", items[position].name.toString())
             Glide.with(binding.image.context).load(items[position].imageUrl).into(binding.image)
@@ -39,4 +43,11 @@ class CharacterAdapter(private val items: ArrayList<CharacterModel>) : RecyclerV
         onClickImageCallback = callback
     }
 
+    fun addPage(page: List<CharacterModel>) {
+        page.forEach{
+            val position = itemCount
+            items.add(position, it)
+            notifyItemInserted(position)
+        }
+    }
 }

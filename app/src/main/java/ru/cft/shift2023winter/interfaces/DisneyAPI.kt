@@ -7,8 +7,8 @@ import ru.cft.shift2023winter.network.NetworkService
 
 class DisneyAPI {
     private val apiService = NetworkService.retrofit.create(IDisneyAPI::class.java)
-    suspend fun getListOfCharacter(): Response<Root> {
-        return apiService.getListOfCharacter()
+    suspend fun getListOfCharacter(pageNum: Int): Response<Root> {
+        return apiService.getListOfCharacter(pageNum)
     }
 
     suspend fun getCharacterById(id: Int): Response<CharacterModel> {

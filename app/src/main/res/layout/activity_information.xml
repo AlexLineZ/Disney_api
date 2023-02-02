@@ -3,30 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/blue_background"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TableLayout
         android:id="@+id/detailsContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
-
+        android:layout_margin="16dp">
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="2dp">
 
             <TextView
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="#19b33d"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="18dp"
                 android:text="Name" />
 
             <TextView
                 android:id="@+id/name"
+                android:textStyle="bold"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="18dp"
                 tools:text="Sanya" />
         </TableRow>
 
@@ -36,16 +43,23 @@
             android:layout_marginVertical="2dp">
 
             <TextView
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="#19b33d"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="18dp"
                 android:text="Films" />
 
             <TextView
                 android:id="@+id/films"
                 android:layout_width="0dp"
+                android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="18dp"
                 tools:text="Spider Man" />
         </TableRow>
 
@@ -58,13 +72,20 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="#19b33d"
+                android:textSize="18dp"
                 android:text="Short films" />
 
             <TextView
                 android:id="@+id/shortfilms"
                 android:layout_width="0dp"
+                android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="18dp"
                 tools:text="Cycle" />
         </TableRow>
 
@@ -77,13 +98,20 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="#19b33d"
+                android:textSize="18dp"
                 android:text="TV Shows" />
 
             <TextView
                 android:id="@+id/tvshows"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:layout_weight="1"
+                android:textSize="18dp"
                 tools:text="Flash" />
         </TableRow>
 
@@ -93,16 +121,23 @@
             android:layout_marginVertical="2dp">
 
             <TextView
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="#19b33d"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="18dp"
                 android:text="Attractions park" />
 
             <TextView
                 android:id="@+id/parks"
                 android:layout_width="0dp"
+                android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="18dp"
                 tools:text="Beloye lake" />
         </TableRow>
 
@@ -112,9 +147,14 @@
             android:layout_marginVertical="2dp">
 
             <TextView
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="#19b33d"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="18dp"
                 android:text="Allies" />
 
             <TextView
@@ -122,6 +162,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="18dp"
                 tools:text="Ivan Vorobev" />
         </TableRow>
 
@@ -131,9 +173,14 @@
             android:layout_marginVertical="2dp">
 
             <TextView
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="#19b33d"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="18dp"
                 android:text="Enemies" />
 
             <TextView
@@ -141,6 +188,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="18dp"
                 tools:text="Yura Sitdikov" />
         </TableRow>
 
