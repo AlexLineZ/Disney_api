@@ -30,8 +30,6 @@ class CharactersActivity : AppCompatActivity(){
                         startActivity(intent)
                     }
                     binding.list.adapter = adapter
-
-
                 }
             }
         }

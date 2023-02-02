@@ -13,6 +13,4 @@ class DisneyAPI {
     suspend fun getCharacterById(id: Int): Response<Root>{
         return apiService.getCharacterById(id)
     }
-
-
 }
