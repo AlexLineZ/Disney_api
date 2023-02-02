@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -21,8 +22,23 @@ class InformationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        var nowId = intent.getIntExtra("findCharacterInformation", 0)
+        var id = intent.getIntExtra("findCharacterInformation", 0)
 
+        GlobalScope.launch(Dispatchers.IO) {
+            val response = DisneyAPI().getCharacterById(id)
+            if (response.isSuccessful) {
+                withContext(Dispatchers.Main) {
+                    val info = response.body()!!
+                    binding.name.text = info.name
+                    binding.films.text = info.films.toString()
+                    binding.shortfilms.text = info.shortFilms.toString()
+                    binding.tvshows.text = info.tvShows.toString()
+                    binding.parks.text = info.parkAttractions.toString()
+                    binding.allies.text = info.allies.toString()
+                    binding.enemies.text = info.enemies.toString()
+                }
+            }
+        }
     }
 }
 
