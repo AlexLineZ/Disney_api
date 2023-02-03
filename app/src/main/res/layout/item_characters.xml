@@ -28,7 +28,6 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="Sanya"
-        android:fontFamily="@font/paper_mario_font"/>
+        android:text="Sanya" />
 
 </LinearLayout>
