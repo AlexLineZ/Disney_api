@@ -19,15 +19,6 @@ import java.net.URL
 class InformationActivity : AppCompatActivity() {
     private val binding by lazy { ActivityInformationBinding.inflate(layoutInflater) }
 
-    fun remove(str: String): String{
-        var str2 = str.substring(1, str.length - 1)
-        return if (str2 == ""){
-            "—"
-        } else {
-            str2
-        }
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -47,6 +38,15 @@ class InformationActivity : AppCompatActivity() {
                     binding.enemies.text = remove(info.enemies.toString())
                 }
             }
+        }
+    }
+
+    fun remove(str: String): String{
+        var str2 = str.substring(1, str.length - 1)
+        return if (str2 == ""){
+            "Nothing"
+        } else {
+            str2
         }
     }
 }

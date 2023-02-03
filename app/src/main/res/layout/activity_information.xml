@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blue_background"
+    android:background="#85c6bc"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TableLayout
@@ -24,7 +24,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:text="Name"
                 android:fontFamily="@font/paper_mario_font"/>
 
@@ -34,7 +34,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 tools:text="Sanya" />
         </TableRow>
 
@@ -51,7 +51,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:text="Films"
                 android:fontFamily="@font/paper_mario_font"/>
 
@@ -61,7 +61,7 @@
                 android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 tools:text="Spider Man" />
         </TableRow>
 
@@ -78,7 +78,7 @@
                 android:textStyle="bold"
                 android:gravity="center_horizontal"
                 android:background="#19b33d"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:text="Short films"
                 android:fontFamily="@font/paper_mario_font"/>
 
@@ -88,7 +88,7 @@
                 android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 tools:text="Cycle" />
         </TableRow>
 
@@ -105,7 +105,7 @@
                 android:textStyle="bold"
                 android:gravity="center_horizontal"
                 android:background="#19b33d"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:text="TV Shows"
                 android:fontFamily="@font/paper_mario_font"/>
 
@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:layout_weight="1"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 tools:text="Flash" />
         </TableRow>
 
@@ -132,7 +132,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:text="Attractions park"
                 android:fontFamily="@font/paper_mario_font"/>
 
@@ -142,7 +142,7 @@
                 android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 tools:text="Beloye lake" />
         </TableRow>
 
@@ -159,7 +159,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:text="Allies"
                 android:fontFamily="@font/paper_mario_font"/>
 
@@ -169,7 +169,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textStyle="bold"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 tools:text="Ivan Vorobev" />
         </TableRow>
 
@@ -186,7 +186,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:text="Enemies"
                 android:fontFamily="@font/paper_mario_font"/>
 
@@ -196,12 +196,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textStyle="bold"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 tools:text="Yura Sitdikov" />
         </TableRow>
 
     </TableLayout>
-
 
 
 </FrameLayout>

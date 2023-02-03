@@ -26,10 +26,11 @@ class CharactersActivity : AppCompatActivity(){
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrollStateChanged(recyclerView, dx);
                 if(!recyclerView.canScrollVertically(1)) {
-
+                    pageNum++
                 }
             }
-        })
+        }) //пока что не смог разобраться как сделать пагинацию, поэтому этот проект будет без нее
+            //(но функцию оставил, мало ли разберусь)
 
         GlobalScope.launch(Dispatchers.IO) {
             var response = DisneyAPI().getListOfCharacter(pageNum)
