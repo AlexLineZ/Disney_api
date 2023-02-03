@@ -26,7 +26,7 @@ class CharactersActivity : AppCompatActivity(){
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrollStateChanged(recyclerView, dx);
                 if(!recyclerView.canScrollVertically(1)) {
-                    pageNum++
+
                 }
             }
         })

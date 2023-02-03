@@ -19,6 +19,15 @@ import java.net.URL
 class InformationActivity : AppCompatActivity() {
     private val binding by lazy { ActivityInformationBinding.inflate(layoutInflater) }
 
+    fun remove(str: String): String{
+        var str2 = str.substring(1, str.length - 1)
+        return if (str2 == ""){
+            "—"
+        } else {
+            str2
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -30,12 +39,12 @@ class InformationActivity : AppCompatActivity() {
                 withContext(Dispatchers.Main) {
                     val info = response.body()!!
                     binding.name.text = info.name
-                    binding.films.text = info.films.toString()
-                    binding.shortfilms.text = info.shortFilms.toString()
-                    binding.tvshows.text = info.tvShows.toString()
-                    binding.parks.text = info.parkAttractions.toString()
-                    binding.allies.text = info.allies.toString()
-                    binding.enemies.text = info.enemies.toString()
+                    binding.films.text = remove(info.films.toString())
+                    binding.shortfilms.text = remove(info.shortFilms.toString())
+                    binding.tvshows.text = remove(info.tvShows.toString())
+                    binding.parks.text = remove(info.parkAttractions.toString())
+                    binding.allies.text = remove(info.allies.toString())
+                    binding.enemies.text = remove(info.enemies.toString())
                 }
             }
         }
