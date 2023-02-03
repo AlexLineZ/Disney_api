@@ -25,7 +25,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="18dp"
-                android:text="Name" />
+                android:text="Name"
+                android:fontFamily="@font/paper_mario_font"/>
 
             <TextView
                 android:id="@+id/name"
@@ -51,7 +52,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="18dp"
-                android:text="Films" />
+                android:text="Films"
+                android:fontFamily="@font/paper_mario_font"/>
 
             <TextView
                 android:id="@+id/films"
@@ -77,7 +79,8 @@
                 android:gravity="center_horizontal"
                 android:background="#19b33d"
                 android:textSize="18dp"
-                android:text="Short films" />
+                android:text="Short films"
+                android:fontFamily="@font/paper_mario_font"/>
 
             <TextView
                 android:id="@+id/shortfilms"
@@ -103,7 +106,8 @@
                 android:gravity="center_horizontal"
                 android:background="#19b33d"
                 android:textSize="18dp"
-                android:text="TV Shows" />
+                android:text="TV Shows"
+                android:fontFamily="@font/paper_mario_font"/>
 
             <TextView
                 android:id="@+id/tvshows"
@@ -129,7 +133,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="18dp"
-                android:text="Attractions park" />
+                android:text="Attractions park"
+                android:fontFamily="@font/paper_mario_font"/>
 
             <TextView
                 android:id="@+id/parks"
@@ -155,7 +160,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="18dp"
-                android:text="Allies" />
+                android:text="Allies"
+                android:fontFamily="@font/paper_mario_font"/>
 
             <TextView
                 android:id="@+id/allies"
@@ -181,7 +187,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="18dp"
-                android:text="Enemies" />
+                android:text="Enemies"
+                android:fontFamily="@font/paper_mario_font"/>
 
             <TextView
                 android:id="@+id/enemies"
