@@ -43,8 +43,8 @@ class InformationActivity : AppCompatActivity() {
 
     fun remove(str: String): String{
         var str2 = str.substring(1, str.length - 1)
-        return if (str2 == ""){
-            "Nothing"
+        return if (str2.isNullOrEmpty()){
+            "—"
         } else {
             str2
         }

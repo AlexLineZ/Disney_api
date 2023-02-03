@@ -43,11 +43,4 @@ class CharacterAdapter(private val items: ArrayList<CharacterModel>) : RecyclerV
         onClickImageCallback = callback
     }
 
-    fun addPage(page: List<CharacterModel>) {
-        page.forEach{
-            val position = itemCount
-            items.add(position, it)
-            notifyItemInserted(position)
-        }
-    }
 }
