@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:background="#3F000000">
+
+
+    <FrameLayout
+        android:layout_width="20dp"
+        android:layout_weight="50"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/image"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mickey_mouse" />
+    </FrameLayout>
+
+
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Sanya" />
+
+</LinearLayout>
